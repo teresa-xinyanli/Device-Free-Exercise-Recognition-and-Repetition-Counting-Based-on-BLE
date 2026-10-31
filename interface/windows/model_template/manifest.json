@@ -1,0 +1,11 @@
+{
+  "api_version": 1,
+  "name": "Your team model",
+  "version": "0.1",
+  "causal": true,
+  "supports_counting": false,
+  "labels": ["squat", "fly", "lat_pulldown", "idle", "other"],
+  "window_s": 4.0,
+  "stride_s": 1.0,
+  "max_gap_s": 0.5
+}
