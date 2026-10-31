@@ -1,0 +1,68 @@
+{
+  "run_id": "exclude_Person02_Fly5_20261030_194752",
+  "model_family": "scikit-learn RandomForestClassifier",
+  "classes": [
+    "Fly",
+    "JumpingJack",
+    "Squat"
+  ],
+  "input": {
+    "columns": [
+      "rssi_00",
+      "rssi_01",
+      "rssi_02",
+      "rssi_03",
+      "rssi_04",
+      "rssi_05",
+      "rssi_06",
+      "rssi_07",
+      "rssi_08",
+      "rssi_09",
+      "rssi_10",
+      "rssi_11",
+      "rssi_12",
+      "rssi_13",
+      "rssi_14",
+      "rssi_15",
+      "rssi_16",
+      "rssi_17",
+      "rssi_18",
+      "rssi_19"
+    ],
+    "window_seconds": 2,
+    "sample_rate_hz": 10,
+    "units": "dBm",
+    "window_overlap": false
+  },
+  "unsupported": [
+    "Idle/standing detection",
+    "Unknown activity rejection",
+    "Repetition counting"
+  ],
+  "models": {
+    "global": {
+      "path": "models/global_rf.joblib",
+      "sha256": "47d5d5bd8a8d988a0c4bc84ab797c44121b5df14f6cbb9783fe91a6243915a1b",
+      "training_windows": 408,
+      "feature_mode": "absolute"
+    },
+    "Person01": {
+      "path": "models/Person01_rf.joblib",
+      "sha256": "bdff4933ca8b55644312fda717c470bb4832c3eee3c9aa631ddba06c3254f363",
+      "training_windows": 174,
+      "feature_mode": "absolute"
+    },
+    "Person02": {
+      "path": "models/Person02_rf.joblib",
+      "sha256": "c81aa6fa03f760f9d53638bb5688861b082326a8605bdca6904e7a34f039c9e8",
+      "training_windows": 136,
+      "feature_mode": "shape"
+    },
+    "Person03": {
+      "path": "models/Person03_rf.joblib",
+      "sha256": "dab4b29f8faccaecd9332ebc9bc049459594dfdbe33b044c7c7eb5ec3707c9d6",
+      "training_windows": 98,
+      "feature_mode": "absolute"
+    }
+  }
+}

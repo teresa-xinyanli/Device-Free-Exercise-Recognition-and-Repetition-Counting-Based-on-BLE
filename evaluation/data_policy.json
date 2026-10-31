@@ -1,0 +1,13 @@
+{
+  "excluded_actions": [
+    "Idle"
+  ],
+  "excluded_source_files": [
+    "Person02-Fly-Front-10-5.csv"
+  ],
+  "note": "Exclusion from training and parameter search only; original source files remain intact.",
+  "training_windows": 408,
+  "training_sessions": 54,
+  "test_windows_global": 418,
+  "raw_input_sha256": "229e58f340251904296ccbd59999f2eef04b5bf4dd025ff61f0c172f23c31b9a"
+}
